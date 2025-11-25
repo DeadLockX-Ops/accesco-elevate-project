@@ -16,7 +16,7 @@ const Services = () => {
     },
     {
       title: "ACCESCO Hub",
-      description: "Connect, collaborate, and build meaningful communities",
+      description: "Rent and lend products seamlessly — access what you need, when you need it",
       image: serviceHub,
       icon: Users,
       gradient: "from-accent-dark/90 to-primary/90",
@@ -68,7 +68,7 @@ const Services = () => {
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-700"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-80 group-hover:opacity-90 transition-smooth`} />
+                <div className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-50 group-hover:opacity-60 transition-smooth`} />
               </div>
 
               {/* Content */}
