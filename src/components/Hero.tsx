@@ -6,13 +6,13 @@ const Hero = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-16 lg:pt-20">
       {/* Background Image with Overlay */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 animate-fade-in">
         <img
           src={heroBanner}
           alt="ACCESCO Corporate Environment"
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover animate-scale-in"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/85 to-background/70" />
+        <div className="absolute inset-0 bg-gradient-to-r from-background/85 via-background/75 to-background/60" />
       </div>
 
       {/* Content */}
@@ -37,11 +37,11 @@ const Hero = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="lg" className="group">
+            <Button variant="hero" size="lg" className="group hover-scale">
               Explore Services
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
             </Button>
-            <Button variant="outline" size="lg">
+            <Button variant="outline" size="lg" className="hover-scale">
               Learn More
             </Button>
           </div>

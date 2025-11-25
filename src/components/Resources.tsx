@@ -50,13 +50,13 @@ const Resources = () => {
           {resources.map((resource, index) => (
             <div
               key={resource.title}
-              className="group relative overflow-hidden p-8 bg-gradient-subtle rounded-2xl shadow-card hover:shadow-elegant transition-smooth animate-scale-in"
+              className="group relative overflow-hidden p-8 bg-gradient-subtle rounded-2xl shadow-card hover:shadow-elegant hover-scale transition-smooth animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${resource.color} opacity-10 rounded-full -translate-y-1/2 translate-x-1/2 group-hover:scale-150 transition-smooth duration-700`} />
               
               <div className="relative">
-                <div className={`w-14 h-14 bg-gradient-to-br ${resource.color} rounded-xl flex items-center justify-center mb-6 shadow-elegant group-hover:scale-110 transition-smooth`}>
+                <div className={`w-14 h-14 bg-gradient-to-br ${resource.color} rounded-xl flex items-center justify-center mb-6 shadow-elegant group-hover:scale-125 transition-smooth`}>
                   <resource.icon className="h-7 w-7 text-primary-foreground" />
                 </div>
                 

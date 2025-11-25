@@ -7,13 +7,13 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
           <div className="order-2 lg:order-1 animate-fade-in">
-            <div className="relative rounded-2xl overflow-hidden shadow-elegant">
+            <div className="relative rounded-2xl overflow-hidden shadow-elegant group">
               <img
                 src={aboutTeam}
                 alt="ACCESCO Team"
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover group-hover:scale-110 transition-smooth duration-700"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent" />
             </div>
           </div>
 
@@ -48,19 +48,19 @@ const About = () => {
 
             {/* Values */}
             <div className="grid grid-cols-2 gap-6 mt-10">
-              <div className="p-4 bg-background rounded-lg shadow-card">
+              <div className="p-4 bg-background rounded-lg shadow-card hover:shadow-elegant hover-scale transition-smooth">
                 <div className="text-2xl font-bold text-primary mb-2">Innovation</div>
                 <p className="text-sm text-muted-foreground">Cutting-edge solutions</p>
               </div>
-              <div className="p-4 bg-background rounded-lg shadow-card">
+              <div className="p-4 bg-background rounded-lg shadow-card hover:shadow-elegant hover-scale transition-smooth">
                 <div className="text-2xl font-bold text-primary mb-2">Trust</div>
                 <p className="text-sm text-muted-foreground">Security first approach</p>
               </div>
-              <div className="p-4 bg-background rounded-lg shadow-card">
+              <div className="p-4 bg-background rounded-lg shadow-card hover:shadow-elegant hover-scale transition-smooth">
                 <div className="text-2xl font-bold text-primary mb-2">Excellence</div>
                 <p className="text-sm text-muted-foreground">Premium quality</p>
               </div>
-              <div className="p-4 bg-background rounded-lg shadow-card">
+              <div className="p-4 bg-background rounded-lg shadow-card hover:shadow-elegant hover-scale transition-smooth">
                 <div className="text-2xl font-bold text-primary mb-2">Community</div>
                 <p className="text-sm text-muted-foreground">User-centered design</p>
               </div>
