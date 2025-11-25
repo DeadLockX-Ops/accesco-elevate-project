@@ -68,7 +68,7 @@ const Services = () => {
                   alt={service.title}
                   className="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-700"
                 />
-                <div className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-50 group-hover:opacity-60 transition-smooth`} />
+                <div className={`absolute inset-0 bg-gradient-to-t ${service.gradient} opacity-30 group-hover:opacity-40 transition-smooth`} />
               </div>
 
               {/* Content */}

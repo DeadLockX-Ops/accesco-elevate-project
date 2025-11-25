@@ -55,10 +55,10 @@ const Features = () => {
           {features.map((feature, index) => (
             <div
               key={feature.title}
-              className="group p-8 bg-background rounded-2xl shadow-card hover:shadow-elegant transition-smooth animate-scale-in"
+              className="group p-8 bg-background rounded-2xl shadow-card hover:shadow-elegant hover-scale transition-smooth animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-smooth shadow-elegant">
+              <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center mb-6 group-hover:scale-125 transition-smooth shadow-elegant">
                 <feature.icon className="h-7 w-7 text-primary-foreground" />
               </div>
               
