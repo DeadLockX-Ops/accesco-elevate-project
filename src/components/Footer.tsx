@@ -1,4 +1,4 @@
-import { Calculator, Heart, ShoppingCart, Wallet, CreditCard, Building2, Phone, HelpCircle, FileText, Shield, Info } from "lucide-react";
+import { Calculator, Heart, ShoppingCart, Wallet, CreditCard, Building2, Phone, HelpCircle, FileText, Shield, Info, Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
 const Footer = () => {
   const footerSections = [
@@ -77,17 +77,30 @@ const Footer = () => {
               Empowering digital excellence through innovative solutions and seamless experiences.
             </p>
             <div className="flex space-x-3">
-              {['facebook', 'twitter', 'linkedin', 'instagram'].map((social) => (
-                <a
-                  key={social}
-                  href={`#${social}`}
-                  className="w-10 h-10 bg-accent/20 hover:bg-primary rounded-lg flex items-center justify-center hover:scale-110 transition-smooth group"
-                >
-                  <span className="text-primary group-hover:text-primary-foreground transition-smooth">
-                    {social[0].toUpperCase()}
-                  </span>
-                </a>
-              ))}
+              <a
+                href="#facebook"
+                className="w-10 h-10 bg-accent/20 hover:bg-primary rounded-lg flex items-center justify-center hover:scale-110 transition-smooth group"
+              >
+                <Facebook className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-smooth" />
+              </a>
+              <a
+                href="#twitter"
+                className="w-10 h-10 bg-accent/20 hover:bg-primary rounded-lg flex items-center justify-center hover:scale-110 transition-smooth group"
+              >
+                <Twitter className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-smooth" />
+              </a>
+              <a
+                href="#linkedin"
+                className="w-10 h-10 bg-accent/20 hover:bg-primary rounded-lg flex items-center justify-center hover:scale-110 transition-smooth group"
+              >
+                <Linkedin className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-smooth" />
+              </a>
+              <a
+                href="#instagram"
+                className="w-10 h-10 bg-accent/20 hover:bg-primary rounded-lg flex items-center justify-center hover:scale-110 transition-smooth group"
+              >
+                <Instagram className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-smooth" />
+              </a>
             </div>
           </div>
 
