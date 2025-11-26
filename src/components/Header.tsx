@@ -35,10 +35,10 @@ export function AppSidebar() {
   ];
 
   return (
-    <Sidebar side="left" className="border-r border-border/50">
+    <Sidebar side="left" className="border-r border-border/50 bg-background">
       <SidebarContent>
         {/* Logo in Sidebar */}
-        <div className="p-6 border-b border-border/50">
+        <div className="p-6 border-b border-border/50 bg-background">
           <a href="#home" className="flex items-center space-x-2 group">
             <div className="w-10 h-10 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center shadow-elegant group-hover:scale-105 transition-smooth">
               <span className="text-primary-foreground font-bold text-lg">A</span>
@@ -59,7 +59,7 @@ export function AppSidebar() {
                   <SidebarMenuButton asChild>
                     <a
                       href={item.href}
-                      className="flex items-center space-x-3 hover:bg-accent/50 transition-smooth"
+                      className="flex items-center space-x-3 hover:bg-accent/50 active:bg-accent/70 data-[active=true]:bg-accent/60 backdrop-blur-sm transition-smooth"
                     >
                       <item.icon className="h-5 w-5 text-primary" />
                       <span className="font-medium">{item.name}</span>
@@ -81,7 +81,7 @@ export function AppSidebar() {
                   <SidebarMenuButton asChild>
                     <a
                       href={item.href}
-                      className="flex items-center space-x-3 hover:bg-accent/50 transition-smooth"
+                      className="flex items-center space-x-3 hover:bg-accent/50 active:bg-accent/70 data-[active=true]:bg-accent/60 backdrop-blur-sm transition-smooth"
                     >
                       <item.icon className="h-5 w-5 text-primary" />
                       <span className="font-medium">{item.name}</span>
@@ -99,7 +99,7 @@ export function AppSidebar() {
             Sign In
           </Button>
           <Button variant="hero" className="w-full">
-            Get Started
+            Sign Up
           </Button>
         </div>
       </SidebarContent>
@@ -113,18 +113,20 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/78 backdrop-blur-md border-b border-border/50 shadow-sm">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
-          {/* Sidebar Trigger */}
-          <SidebarTrigger className="hover:bg-accent/50 transition-smooth" />
-
-          {/* Logo */}
-          <a href="#home" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center shadow-elegant group-hover:scale-110 transition-smooth animate-fade-in">
-              <span className="text-primary-foreground font-bold text-lg lg:text-xl">A</span>
-            </div>
-            <span className="text-xl lg:text-2xl font-bold text-foreground tracking-tight">
-              ACCESCO
-            </span>
-          </a>
+          {/* Left side: Logo and Sidebar Trigger stacked */}
+          <div className="flex flex-col items-start gap-1">
+            {/* Logo */}
+            <a href="#home" className="flex items-center space-x-2 group">
+              <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-primary to-primary-light rounded-lg flex items-center justify-center shadow-elegant group-hover:scale-110 transition-smooth animate-fade-in">
+                <span className="text-primary-foreground font-bold text-lg lg:text-xl">A</span>
+              </div>
+              <span className="text-xl lg:text-2xl font-bold text-foreground tracking-tight">
+                ACCESCO
+              </span>
+            </a>
+            {/* Sidebar Trigger below logo */}
+            <SidebarTrigger className="hover:bg-accent/50 transition-smooth ml-1" />
+          </div>
 
           {/* Desktop CTA */}
           <div className="hidden lg:flex items-center space-x-4">
@@ -132,7 +134,7 @@ const Header = () => {
               Sign In
             </Button>
             <Button variant="hero" size="sm" className="hover-scale">
-              Get Started
+              Sign Up
             </Button>
           </div>
 
