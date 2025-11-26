@@ -1,9 +1,10 @@
-import { ShoppingBag, Users, Shirt, UtensilsCrossed, ArrowRight } from "lucide-react";
+import { ShoppingBag, Users, Shirt, UtensilsCrossed, Store, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import serviceMart from "@/assets/service-mart.jpg";
 import serviceHub from "@/assets/service-hub.jpg";
 import serviceStyle from "@/assets/service-style.jpg";
 import serviceEat from "@/assets/service-eat.jpg";
+import serviceDineout from "@/assets/service-dineout.jpg";
 
 const Services = () => {
   const services = [
@@ -35,6 +36,13 @@ const Services = () => {
       icon: UtensilsCrossed,
       gradient: "from-primary/90 to-primary-light/90",
     },
+    {
+      title: "ACCESCO Dineout",
+      description: "Premium dining experiences and restaurant reservations made effortless",
+      image: serviceDineout,
+      icon: Store,
+      gradient: "from-accent/90 to-primary-dark/90",
+    },
   ];
 
   return (
@@ -54,7 +62,7 @@ const Services = () => {
         </div>
 
         {/* Services Grid */}
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
           {services.map((service, index) => (
             <div
               key={service.title}
