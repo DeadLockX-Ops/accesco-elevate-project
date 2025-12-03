@@ -4,6 +4,7 @@ import About from "@/components/About";
 import Services from "@/components/Services";
 import Features from "@/components/Features";
 import Resources from "@/components/Resources";
+import Gaming from "@/components/Gaming";
 import Footer from "@/components/Footer";
 import { SidebarProvider } from "@/components/ui/sidebar";
 
@@ -19,6 +20,7 @@ const Index = () => {
             <About />
             <Services />
             <Features />
+            <Gaming />
             <Resources />
           </main>
           <Footer />
